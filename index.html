@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Learning Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Gamified Learning Game</h1>
+    <div id="learning-section">
+      <h2>Level <span id="level-number">1</span>: Learn</h2>
+      <p id="learning-text">This is the learning content for Level 1. Read it carefully.</p>
+      <p class="timer">Time left: <span id="timer">30</span> seconds</p>
+    </div>
+    <button id="start-assignment" disabled>Start Assignment</button>
+    
+    <div id="assignment-section" class="hidden">
+      <h2>Assignment</h2>
+      <p id="question">Question will appear here...</p>
+      <div id="options"></div>
+      <p id="feedback"></p>
+    </div>
+    
+    <p class="score">Score: <span id="score">0</span></p>
+    <button id="reset-game">Reset Game</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
